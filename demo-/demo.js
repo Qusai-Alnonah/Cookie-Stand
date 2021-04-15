@@ -64,7 +64,7 @@ Kitten.prototype.render = function(){
     article.appendChild(image);
     // image.setAttribute('src', 'images/frankie.jpeg');
     image.setAttribute('src', `images/${this.kittenName}.jpeg`);
-
+//table//
     let table = document.createElement('table');
     article.appendChild(table);
     let headerRow = document.createElement('tr');
@@ -98,3 +98,6 @@ for(let i = 0 ; i< arrOfobjects.length; i++){
     arrOfobjects[i].getAge();
     arrOfobjects[i].render();
 }
+
+
+
