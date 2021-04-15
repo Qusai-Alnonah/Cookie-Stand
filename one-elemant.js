@@ -128,6 +128,12 @@ let table = document.getElementById('cookieTable');
 
 
     }
+    const form = document.getElementById('Cookie-Sale');
+    form .addEventListener('submit',handleSubmitting)
+    function handleSubmitting(){
+
+        
+    }
 
 
     seattle.render();
@@ -137,6 +143,7 @@ let table = document.getElementById('cookieTable');
     lima.render();
 
     footerRow();
+
 
     
            
