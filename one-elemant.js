@@ -65,9 +65,9 @@ let table = document.getElementById('cookieTable');
     console.log(table);
   let tr=document.createElement('tr')
   table.appendChild(tr)
-  let th=document.createElement('th')
-  tr.appendChild(th)
-  th.textContent='';
+  let th=document.createElement('td')
+  tr.appendChild(td)
+  td.textContent='';
   for (let i=0;i<=numHour.length;i++){
     let th2=document.createElement('th')
     tr.appendChild(th2)
@@ -144,6 +144,15 @@ let table = document.getElementById('cookieTable');
 
     footerRow();
 
+    const button = document.getElementById('Cookie-Sale');
+
+
+     form.addEventListener('submit',handleSubmitting);
+
+     function handleSubmitting(event){
+         event.preventDefault();
+         console.log(event);
+     }
 
     
            
