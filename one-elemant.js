@@ -78,7 +78,6 @@ let table = document.getElementById('cookieTable');
   th3.textContent='Daily Location Total';
     }
     tableheader();
-   
     Contry.prototype.render = function(){
      //console.log(this.calcNumOfCookiesPerHour);
         let tr =document.createElement('tr');
@@ -128,12 +127,12 @@ let table = document.getElementById('cookieTable');
 
 
     }
-    const form = document.getElementById('Cookie-Sale');
-    form .addEventListener('submit',handleSubmitting)
-    function handleSubmitting(){
 
-        
-    }
+   
+   
+  
+
+
 
 
     seattle.render();
@@ -143,9 +142,18 @@ let table = document.getElementById('cookieTable');
     lima.render();
 
     footerRow();
-
-
-    
+   
+        
+const form = document.getElementById('Cookie-Sale');
+form .addEventListener('submit',handleSubmitting)
+     function handleSubmitting(event){
+         event.preventDefault();
+       
+             let name =event.target.name.value;
+             let Min =parseInt(event.target.minCust.value);
+             let Max =parseInt(event.target.maxCust.value);
+             let Avareg =parseInt(event.target.avgPerSale.value);
+                  } 
            
             
             
