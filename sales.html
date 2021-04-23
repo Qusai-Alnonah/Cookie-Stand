@@ -8,6 +8,7 @@
 </head>
 <body>
     <header>
+      <link rel="stylesheet" href="style.css">
        
 
     <div id="container">
@@ -19,42 +20,45 @@
     <main>
         <h2>Cookies Number Per Hour:</h2>
         
-        <img src="https://codefellows.github.io/code-201-guide/curriculum/class-06/lab/assets/salmon.png">
-       <table id="cookieTable">
-          <tr>
-            <th></th>
-            <th></th>
-          </tr>
-          <tr>
-            <td></td>
-            <td></td>
-          </tr>
-        </table>
-        <form id= "Cookie-Sale">
+        <img src="image/assets/chinook.jpg">
+       
+        <form id= "storeForm">
             <fieldset>
             <legend>Cookies Form</legend> 
-              <label for="Name of City">City</label>
-              <input type="text" id="Name of City">
+              <label for="name">City:</label>
+              <input name="Cityname" type="text" id="Name of City">
               <br>
-              <label for="Min Custemer">Min</label>
-              <input type="number" id='Min Custemer'>
+              <label for="min Custemer">Min</label>
+              <input name= "minCustomers" type="number" step="any" min="0" required id='Min Custemer'>
               <br>
-              <label for="Max Custemer">Max</label>
-              <input type="number" id="Max Custemer">
+              <label for="max Custemer">Max</label>
+              <input name="maxCustomers" type="number" step="any" min="0" required id="Max Custemer">
               <br>
-              <label for="Avareg Custemer">Avareg</label>
-              <input type="number"id="Avareg Custemer">
+              <label for="avareg Custemer">Avareg</label>
+              <input name="aveCookies" type="number" step="any" min="0" required id="Avareg Custemer">
               <br>
-              <input type="submit" value="Submit">
+              <button type="submit" >Open new Store!</button>
         
-          </fieldset>  
+          </fieldset>   -->
         
         </form>
+        <div id="tableScroll">
+        <table  id="standsTable">
         
+          <!-- <tr>
+            <th></th>
+            <th></th>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+          </tr> -->
+        </table>
+      </div>
         
     </main>
     <footer>
-    <script src="one-elemant.js"></script>
+    <script src="app-.js"></script>
     
 </footer>
     
